@@ -1,16 +1,16 @@
 {
   "$schema": "https://chickensoft.games/schemas/addons.schema.json",
   "addons": {
-    // Cosmetic-template bootstrap pins the shared asset/resource contract.
     "aerobeat-asset-core": {
-      "url": "git@github.com:AeroBeat-Workouts/aerobeat-asset-core.git",
-      "checkout": "main",
-      "subfolder": "/"
+      "url": "../../aerobeat-asset-core",
+      "subfolder": "/",
+      "source": "symlink"
     },
-    // This generic cosmetic template intentionally does not pin a specific feature addon.
-    // Add the concrete aerobeat-feature-* dependency you are validating against when a
-    // real downstream cosmetic package needs feature-specific runtime checks.
-    // GUT drives the repo-local test suite inside the hidden testbed/workbench.
+    "aerobeat-tool-headless-manager": {
+      "url": "../../aerobeat-tool-headless-manager",
+      "subfolder": "/",
+      "source": "symlink"
+    },
     "gut": {
       "url": "git@github.com:bitwes/Gut.git",
       "checkout": "main",
